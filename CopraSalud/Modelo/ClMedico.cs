@@ -133,16 +133,17 @@ namespace CopraSalud.Modelo
             }
         }
 
-        public ClMedico actualizarMedico(string sql)
+        public ClMedico datosMedico(string sql)
         {
             try
             {
                 ClMedico medico = new ClMedico();
+                c = objcon.mtdconectar();
                 cmdIns = new SqlCommand(sql, c);
                 sd = cmdIns.ExecuteReader();
                 while (sd.Read())
                 {
-                    medico.idMedico = Convert.ToInt32(sd["idMedico"])
+                    medico.idMedico = Convert.ToInt32(sd["idMedico"]);
                     medico.nombre = Convert.ToString(sd["Nombre"]);
                     medico.apellido = Convert.ToString(sd["Apellido"]);
                     medico.telefono = Convert.ToInt64(sd["Telefono"]);
@@ -154,6 +155,24 @@ namespace CopraSalud.Modelo
                 
                 MessageBox.Show("Error al devolver actualizar medico: " + ex.Message);
                 return null;
+            }
+        }
+
+        public bool updateMedico(int idMedico , int especialidad, string nombre, string apellido, long telefono)
+        {
+            try
+            {
+                c = objcon.mtdconectar();
+                string insertar = "UPDATE Medico SET Especialidad = " + especialidad + ", Nombre = '" + nombre + "',Apellido = '" + apellido + "',Telefono = " + telefono + " WHERE idMedico = " + idMedico;
+                cmdIns = new SqlCommand(insertar, c);
+                cmdIns.ExecuteNonQuery();
+
+                return true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al actualizar el usuario", "Error", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+                throw;
             }
         }
 

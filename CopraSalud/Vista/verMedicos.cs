@@ -22,6 +22,7 @@ namespace CopraSalud.Vista
         ClMedico objMedico = new ClMedico();
         List<ClMedico> listaMedico = new List<ClMedico>();
         historialMedico historialMedico = new historialMedico();
+        actualizarMedico actualizarMedico = new actualizarMedico();
 
         int idMedico;
         private void verMedicos_Load(object sender, EventArgs e)
@@ -77,7 +78,8 @@ namespace CopraSalud.Vista
 
         private void btnActualizar_Click(object sender, EventArgs e)
         {
-
+            actualizarMedico.Medico = idMedico;
+            actualizarMedico.Show();
         }
 
     }

@@ -177,7 +177,7 @@ namespace CopraSalud.Modelo
             catch (Exception ex)
             {
                 MessageBox.Show("Error al actualizar el usuario", "Error", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
-                throw;
+                return false;
             }
         }
     }

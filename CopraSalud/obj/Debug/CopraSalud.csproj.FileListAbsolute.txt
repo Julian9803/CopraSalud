@@ -18,3 +18,4 @@ C:\Users\EdisonJulian\documents\visual studio 2013\Projects\CopraSalud\CopraSalu
 C:\Users\EdisonJulian\documents\visual studio 2013\Projects\CopraSalud\CopraSalud\obj\Debug\CopraSalud.Vista.registrarMedico.resources
 C:\Users\EdisonJulian\documents\visual studio 2013\Projects\CopraSalud\CopraSalud\obj\Debug\CopraSalud.Vista.verMedicos.resources
 C:\Users\EdisonJulian\documents\visual studio 2013\Projects\CopraSalud\CopraSalud\obj\Debug\CopraSalud.Vista.historialMedico.resources
+C:\Users\EdisonJulian\documents\visual studio 2013\Projects\CopraSalud\CopraSalud\obj\Debug\CopraSalud.Vista.actualizarMedico.resources
