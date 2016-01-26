@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{70DCBA9B-063E-4DBD-83FA-0C4131970510}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CopraSalud</RootNamespace>
+    <AssemblyName>CopraSalud</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Modelo\ClCita.cs" />
+    <Compile Include="Modelo\ClConexion.cs" />
+    <Compile Include="Modelo\ClEspecialidad.cs" />
+    <Compile Include="Modelo\ClMedico.cs" />
+    <Compile Include="Modelo\ClUsuario.cs" />
+    <Compile Include="Modelo\ClCotizante.cs" />
+    <Compile Include="Vista\actualizarCotizante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\actualizarCotizante.Designer.cs">
+      <DependentUpon>actualizarCotizante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\actualizarMedico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\actualizarMedico.Designer.cs">
+      <DependentUpon>actualizarMedico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\actualizarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\actualizarUsuario.Designer.cs">
+      <DependentUpon>actualizarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Cita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Cita.Designer.cs">
+      <DependentUpon>Cita.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\historialCitas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\historialCitas.Designer.cs">
+      <DependentUpon>historialCitas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\historialMedico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\historialMedico.Designer.cs">
+      <DependentUpon>historialMedico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\registrarEspecialidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\registrarEspecialidad.Designer.cs">
+      <DependentUpon>registrarEspecialidad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\registrarMedico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\registrarMedico.Designer.cs">
+      <DependentUpon>registrarMedico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\RegistrarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\RegistrarUsuario.Designer.cs">
+      <DependentUpon>RegistrarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\verMedicos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\verMedicos.Designer.cs">
+      <DependentUpon>verMedicos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\VerUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\VerUsuarios.Designer.cs">
+      <DependentUpon>VerUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\vistaAdministrador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\vistaAdministrador.Designer.cs">
+      <DependentUpon>vistaAdministrador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\VistaCotizante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\VistaCotizante.Designer.cs">
+      <DependentUpon>VistaCotizante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Vista\actualizarCotizante.resx">
+      <DependentUpon>actualizarCotizante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\actualizarMedico.resx">
+      <DependentUpon>actualizarMedico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\actualizarUsuario.resx">
+      <DependentUpon>actualizarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Cita.resx">
+      <DependentUpon>Cita.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\historialCitas.resx">
+      <DependentUpon>historialCitas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\historialMedico.resx">
+      <DependentUpon>historialMedico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\registrarEspecialidad.resx">
+      <DependentUpon>registrarEspecialidad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\registrarMedico.resx">
+      <DependentUpon>registrarMedico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\RegistrarUsuario.resx">
+      <DependentUpon>RegistrarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\verMedicos.resx">
+      <DependentUpon>verMedicos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\VerUsuarios.resx">
+      <DependentUpon>VerUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\vistaAdministrador.resx">
+      <DependentUpon>vistaAdministrador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\VistaCotizante.resx">
+      <DependentUpon>VistaCotizante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
