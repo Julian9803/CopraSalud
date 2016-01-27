@@ -19,3 +19,8 @@ C:\Users\EdisonJulian\documents\visual studio 2013\Projects\CopraSalud\CopraSalu
 C:\Users\EdisonJulian\documents\visual studio 2013\Projects\CopraSalud\CopraSalud\obj\Debug\CopraSalud.Vista.verMedicos.resources
 C:\Users\EdisonJulian\documents\visual studio 2013\Projects\CopraSalud\CopraSalud\obj\Debug\CopraSalud.Vista.historialMedico.resources
 C:\Users\EdisonJulian\documents\visual studio 2013\Projects\CopraSalud\CopraSalud\obj\Debug\CopraSalud.Vista.actualizarMedico.resources
+C:\Users\EdisonJulian\documents\visual studio 2013\Projects\CopraSalud\CopraSalud\obj\Debug\CopraSalud.Vista.Login.resources
+C:\Users\EdisonJulian\documents\visual studio 2013\Projects\CopraSalud\CopraSalud\obj\Debug\CopraSalud.Vista.registrarCotizante.resources
+C:\Users\EdisonJulian\documents\visual studio 2013\Projects\CopraSalud\CopraSalud\obj\Debug\CopraSalud.Vista.verCotizantes.resources
+C:\Users\EdisonJulian\documents\visual studio 2013\Projects\CopraSalud\CopraSalud\obj\Debug\CopraSalud.Vista.historialUsuario.resources
+C:\Users\EdisonJulian\documents\visual studio 2013\Projects\CopraSalud\CopraSalud\obj\Debug\CopraSalud.Vista.citasUsuario.resources

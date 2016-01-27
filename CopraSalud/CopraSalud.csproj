@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Modelo\ClAdministrador.cs" />
     <Compile Include="Modelo\ClCita.cs" />
     <Compile Include="Modelo\ClConexion.cs" />
     <Compile Include="Modelo\ClEspecialidad.cs" />
@@ -74,6 +75,12 @@
     <Compile Include="Vista\Cita.Designer.cs">
       <DependentUpon>Cita.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista\citasUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\citasUsuario.Designer.cs">
+      <DependentUpon>citasUsuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vista\historialCitas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +92,24 @@
     </Compile>
     <Compile Include="Vista\historialMedico.Designer.cs">
       <DependentUpon>historialMedico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\historialUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\historialUsuario.Designer.cs">
+      <DependentUpon>historialUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\registrarCotizante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\registrarCotizante.Designer.cs">
+      <DependentUpon>registrarCotizante.cs</DependentUpon>
     </Compile>
     <Compile Include="Vista\registrarEspecialidad.cs">
       <SubType>Form</SubType>
@@ -103,6 +128,12 @@
     </Compile>
     <Compile Include="Vista\RegistrarUsuario.Designer.cs">
       <DependentUpon>RegistrarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\verCotizantes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\verCotizantes.Designer.cs">
+      <DependentUpon>verCotizantes.cs</DependentUpon>
     </Compile>
     <Compile Include="Vista\verMedicos.cs">
       <SubType>Form</SubType>
@@ -142,11 +173,23 @@
     <EmbeddedResource Include="Vista\Cita.resx">
       <DependentUpon>Cita.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vista\citasUsuario.resx">
+      <DependentUpon>citasUsuario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vista\historialCitas.resx">
       <DependentUpon>historialCitas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\historialMedico.resx">
       <DependentUpon>historialMedico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\historialUsuario.resx">
+      <DependentUpon>historialUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\registrarCotizante.resx">
+      <DependentUpon>registrarCotizante.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\registrarEspecialidad.resx">
       <DependentUpon>registrarEspecialidad.cs</DependentUpon>
@@ -156,6 +199,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\RegistrarUsuario.resx">
       <DependentUpon>RegistrarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\verCotizantes.resx">
+      <DependentUpon>verCotizantes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\verMedicos.resx">
       <DependentUpon>verMedicos.cs</DependentUpon>

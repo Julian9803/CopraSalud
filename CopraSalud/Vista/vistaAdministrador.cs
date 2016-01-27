@@ -20,6 +20,8 @@ namespace CopraSalud.Vista
         registrarEspecialidad registrarEspecialidad = new registrarEspecialidad();
         registrarMedico registrarMedico = new registrarMedico();
         verMedicos verMedicos = new verMedicos();
+        registrarCotizante registrarCotizante;
+        verCotizantes verCotizantes;
         private void registrarEspecialidadToolStripMenuItem_Click(object sender, EventArgs e)
         {
             registrarEspecialidad.MdiParent = this;
@@ -36,6 +38,25 @@ namespace CopraSalud.Vista
         {
             verMedicos.MdiParent = this;
             verMedicos.Show();
+        }
+
+        private void vistaAdministrador_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void registrarCotizanteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            registrarCotizante = new registrarCotizante();
+            registrarCotizante.MdiParent = this;
+            registrarCotizante.Show();
+        }
+
+        private void verCotizanteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            verCotizantes = new verCotizantes();
+            verCotizantes.MdiParent = this;
+            verCotizantes.Show();
         }
     }
 }

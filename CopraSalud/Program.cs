@@ -16,7 +16,7 @@ namespace CopraSalud
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new vistaAdministrador());
+            Application.Run(new Login());
         }
     }
 }

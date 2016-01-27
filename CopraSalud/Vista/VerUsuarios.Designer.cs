@@ -32,8 +32,8 @@
             this.dtgUsuarios = new System.Windows.Forms.DataGridView();
             this.btnSolicitar = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btnConsultar = new System.Windows.Forms.Button();
             this.btnActualizar = new System.Windows.Forms.Button();
+            this.btnConsultar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgUsuarios)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -83,16 +83,6 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Tareas";
             // 
-            // btnConsultar
-            // 
-            this.btnConsultar.Location = new System.Drawing.Point(199, 39);
-            this.btnConsultar.Name = "btnConsultar";
-            this.btnConsultar.Size = new System.Drawing.Size(165, 39);
-            this.btnConsultar.TabIndex = 2;
-            this.btnConsultar.Text = "Consultar citas";
-            this.btnConsultar.UseVisualStyleBackColor = true;
-            this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
-            // 
             // btnActualizar
             // 
             this.btnActualizar.Location = new System.Drawing.Point(407, 39);
@@ -103,6 +93,16 @@
             this.btnActualizar.UseVisualStyleBackColor = true;
             this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
+            // btnConsultar
+            // 
+            this.btnConsultar.Location = new System.Drawing.Point(199, 39);
+            this.btnConsultar.Name = "btnConsultar";
+            this.btnConsultar.Size = new System.Drawing.Size(165, 39);
+            this.btnConsultar.TabIndex = 2;
+            this.btnConsultar.Text = "Consultar citas";
+            this.btnConsultar.UseVisualStyleBackColor = true;
+            this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
+            // 
             // VerUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -112,7 +112,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "VerUsuarios";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "VerUsuarios";
+            this.Text = "Ver Usuarios";
             this.Load += new System.EventHandler(this.VerUsuarios_Load);
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtgUsuarios)).EndInit();

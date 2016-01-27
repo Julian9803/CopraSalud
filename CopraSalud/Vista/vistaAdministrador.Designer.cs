@@ -38,6 +38,10 @@
             this.medicoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registrarMedicoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.verMedicosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.opcionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cotizanteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.registrarCotizanteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.verCotizanteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,7 +53,8 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tareasToolStripMenuItem});
+            this.tareasToolStripMenuItem,
+            this.opcionesToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(881, 24);
@@ -71,7 +76,7 @@
             this.registrarEspecialidadToolStripMenuItem,
             this.verEspecialidadesToolStripMenuItem});
             this.especialidadToolStripMenuItem.Name = "especialidadToolStripMenuItem";
-            this.especialidadToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.especialidadToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
             this.especialidadToolStripMenuItem.Text = "Especialidad";
             // 
             // registrarEspecialidadToolStripMenuItem
@@ -93,7 +98,7 @@
             this.registrarMedicoToolStripMenuItem,
             this.verMedicosToolStripMenuItem});
             this.medicoToolStripMenuItem.Name = "medicoToolStripMenuItem";
-            this.medicoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.medicoToolStripMenuItem.Size = new System.Drawing.Size(139, 22);
             this.medicoToolStripMenuItem.Text = "Medico";
             // 
             // registrarMedicoToolStripMenuItem
@@ -110,6 +115,37 @@
             this.verMedicosToolStripMenuItem.Text = "Ver Medicos";
             this.verMedicosToolStripMenuItem.Click += new System.EventHandler(this.verMedicosToolStripMenuItem_Click);
             // 
+            // opcionesToolStripMenuItem
+            // 
+            this.opcionesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cotizanteToolStripMenuItem});
+            this.opcionesToolStripMenuItem.Name = "opcionesToolStripMenuItem";
+            this.opcionesToolStripMenuItem.Size = new System.Drawing.Size(69, 20);
+            this.opcionesToolStripMenuItem.Text = "Opciones";
+            // 
+            // cotizanteToolStripMenuItem
+            // 
+            this.cotizanteToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.registrarCotizanteToolStripMenuItem,
+            this.verCotizanteToolStripMenuItem});
+            this.cotizanteToolStripMenuItem.Name = "cotizanteToolStripMenuItem";
+            this.cotizanteToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.cotizanteToolStripMenuItem.Text = "Cotizante";
+            // 
+            // registrarCotizanteToolStripMenuItem
+            // 
+            this.registrarCotizanteToolStripMenuItem.Name = "registrarCotizanteToolStripMenuItem";
+            this.registrarCotizanteToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
+            this.registrarCotizanteToolStripMenuItem.Text = "Registrar Cotizante";
+            this.registrarCotizanteToolStripMenuItem.Click += new System.EventHandler(this.registrarCotizanteToolStripMenuItem_Click);
+            // 
+            // verCotizanteToolStripMenuItem
+            // 
+            this.verCotizanteToolStripMenuItem.Name = "verCotizanteToolStripMenuItem";
+            this.verCotizanteToolStripMenuItem.Size = new System.Drawing.Size(173, 22);
+            this.verCotizanteToolStripMenuItem.Text = "Ver Cotizante";
+            this.verCotizanteToolStripMenuItem.Click += new System.EventHandler(this.verCotizanteToolStripMenuItem_Click);
+            // 
             // vistaAdministrador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -121,6 +157,7 @@
             this.Name = "vistaAdministrador";
             this.Text = "Vista Administrador";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.vistaAdministrador_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -139,5 +176,9 @@
         private System.Windows.Forms.ToolStripMenuItem medicoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem registrarMedicoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem verMedicosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem opcionesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cotizanteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem registrarCotizanteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem verCotizanteToolStripMenuItem;
     }
 }

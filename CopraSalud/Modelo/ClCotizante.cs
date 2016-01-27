@@ -123,5 +123,68 @@ namespace CopraSalud.Modelo
             }
         }
 
+        public bool registrarCotizante(string nombre, string apellido, int telefono, string FechaNacimiento, string empresa, string TelefonoEmpresa, string usuario, string password)
+        {
+            try
+            {
+                c = objcon.mtdconectar();
+                string insertar = "INSERT INTO Cotizante(Nombre,Apellido,Telefono,FechaNacimiento,Empresa,TelefonoEmpresa,Usuario,Password) VALUES('" + nombre + "','" + apellido + "',"+telefono+",'"+FechaNacimiento+"','"+empresa+"','"+TelefonoEmpresa+"','"+usuario+"','"+password+"')";
+                cmdIns = new SqlCommand(insertar, c);
+                cmdIns.ExecuteNonQuery();
+
+                return true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al insertar: " + ex.Message);
+                return false;
+            }
+        }
+
+        public List<ClCotizante> retornarCotizantes(string sql)
+        {
+            try
+            {
+                List<ClCotizante> lista = new List<ClCotizante>();
+                c = objcon.mtdconectar();
+                cmdIns = new SqlCommand(sql, c);
+                sd = cmdIns.ExecuteReader();
+
+                while (sd.Read()) {
+                    lista.Add(convertirCotizante(sd));
+                }
+                return lista;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al retornar los cotizantes: " + ex.Message);
+                return null;
+            }
+        }
+
+        public ClCotizante convertirCotizante(IDataReader reader)
+        {
+            try
+            {
+                ClCotizante cotizante = new ClCotizante();
+
+                cotizante.idCotizante = Convert.ToInt32(reader["idCotizante"]);
+                cotizante.Nombre = Convert.ToString(reader["Nombre"]);
+                cotizante.apellido = Convert.ToString(reader["Apellido"]);
+                cotizante.telefono = Convert.ToInt32(reader["Telefono"]);
+                cotizante.fechaNacimiento = Convert.ToString(reader["FechaNacimiento"]);
+                cotizante.Empresa = Convert.ToString(reader["Empresa"]);
+                cotizante.telefonoEmpresa = Convert.ToString(reader["TelefonoEmpresa"]);
+                cotizante.Usuario = Convert.ToString(reader["Usuario"]);
+
+                return cotizante;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al convertir el cotizante: " + ex.Message);
+                return null;
+            }
+        }
+
     }
 }
