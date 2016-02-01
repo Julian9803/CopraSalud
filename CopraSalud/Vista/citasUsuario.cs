@@ -37,5 +37,10 @@ namespace CopraSalud.Vista
             lista = objCita.historialUsuario(sql);
             dgvUsuario.DataSource = lista;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

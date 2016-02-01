@@ -32,8 +32,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -51,6 +54,39 @@
     <Compile Include="Modelo\ClMedico.cs" />
     <Compile Include="Modelo\ClUsuario.cs" />
     <Compile Include="Modelo\ClCotizante.cs" />
+    <Compile Include="Reportes\dstCertificado.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dstCertificado.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\dstCita.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dstCita.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\dtsCertMedico.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dtsCertMedico.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmCertificado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmCertificado.Designer.cs">
+      <DependentUpon>frmCertificado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmCitaHistorial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmCitaHistorial.Designer.cs">
+      <DependentUpon>frmCitaHistorial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmCMedico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmCMedico.Designer.cs">
+      <DependentUpon>frmCMedico.cs</DependentUpon>
+    </Compile>
     <Compile Include="Vista\actualizarCotizante.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -161,6 +197,19 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Reportes\frmCertificado.resx">
+      <DependentUpon>frmCertificado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmCitaHistorial.resx">
+      <DependentUpon>frmCitaHistorial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmCMedico.resx">
+      <DependentUpon>frmCMedico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\Report1.rdlc" />
+    <EmbeddedResource Include="Reportes\rptCert.rdlc" />
+    <EmbeddedResource Include="Reportes\rptCertificado.rdlc" />
+    <EmbeddedResource Include="Reportes\rptCertMedico.rdlc" />
     <EmbeddedResource Include="Vista\actualizarCotizante.resx">
       <DependentUpon>actualizarCotizante.cs</DependentUpon>
     </EmbeddedResource>
@@ -233,6 +282,39 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Reportes\dstCertificado.xsc">
+      <DependentUpon>dstCertificado.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\dstCertificado.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dstCertificado.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reportes\dstCertificado.xss">
+      <DependentUpon>dstCertificado.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\dstCita.xsc">
+      <DependentUpon>dstCita.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\dstCita.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dstCita.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reportes\dstCita.xss">
+      <DependentUpon>dstCita.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\dtsCertMedico.xsc">
+      <DependentUpon>dtsCertMedico.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\dtsCertMedico.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dtsCertMedico.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reportes\dtsCertMedico.xss">
+      <DependentUpon>dtsCertMedico.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

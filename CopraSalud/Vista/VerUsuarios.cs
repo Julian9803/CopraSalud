@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using CopraSalud.Modelo;
 using CopraSalud.Vista;
-
+using CopraSalud.Reportes;
 namespace CopraSalud.Vista
 {
     public partial class VerUsuarios : Form
@@ -24,6 +24,7 @@ namespace CopraSalud.Vista
         historialCitas historial = new historialCitas();
         List<ClUsuario> lista = new List<ClUsuario>();
         actualizarUsuario actU = new actualizarUsuario();
+        frmCertificado certi;
         string hola;
         int usuario;
         private void VerUsuarios_Load(object sender, EventArgs e)
@@ -69,6 +70,13 @@ namespace CopraSalud.Vista
             actU.idUsuario = usuario;
             actU.Show();
             
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            certi = new frmCertificado();
+            certi.usuario = usuario;
+            certi.ShowDialog();
         }
     }
 }

@@ -24,3 +24,8 @@ C:\Users\EdisonJulian\documents\visual studio 2013\Projects\CopraSalud\CopraSalu
 C:\Users\EdisonJulian\documents\visual studio 2013\Projects\CopraSalud\CopraSalud\obj\Debug\CopraSalud.Vista.verCotizantes.resources
 C:\Users\EdisonJulian\documents\visual studio 2013\Projects\CopraSalud\CopraSalud\obj\Debug\CopraSalud.Vista.historialUsuario.resources
 C:\Users\EdisonJulian\documents\visual studio 2013\Projects\CopraSalud\CopraSalud\obj\Debug\CopraSalud.Vista.citasUsuario.resources
+C:\Users\EdisonJulian\documents\visual studio 2013\Projects\CopraSalud\CopraSalud\obj\Debug\CopraSalud.Reportes.frmCitaHistorial.resources
+C:\Users\EdisonJulian\documents\visual studio 2013\Projects\CopraSalud\CopraSalud\obj\Debug\RdlCompile.cache
+C:\Users\EdisonJulian\documents\visual studio 2013\Projects\CopraSalud\CopraSalud\obj\Debug\RdlCompile.compiled
+C:\Users\EdisonJulian\documents\visual studio 2013\Projects\CopraSalud\CopraSalud\obj\Debug\CopraSalud.Reportes.frmCertificado.resources
+C:\Users\EdisonJulian\documents\visual studio 2013\Projects\CopraSalud\CopraSalud\obj\Debug\CopraSalud.Reportes.frmCMedico.resources

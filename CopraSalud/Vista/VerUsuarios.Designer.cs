@@ -34,6 +34,7 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnActualizar = new System.Windows.Forms.Button();
             this.btnConsultar = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgUsuarios)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -72,22 +73,23 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.button1);
             this.groupBox2.Controls.Add(this.btnActualizar);
             this.groupBox2.Controls.Add(this.btnConsultar);
             this.groupBox2.Controls.Add(this.btnSolicitar);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(54, 320);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(674, 100);
+            this.groupBox2.Size = new System.Drawing.Size(716, 109);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Tareas";
             // 
             // btnActualizar
             // 
-            this.btnActualizar.Location = new System.Drawing.Point(407, 39);
+            this.btnActualizar.Location = new System.Drawing.Point(335, 39);
             this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(190, 39);
+            this.btnActualizar.Size = new System.Drawing.Size(189, 39);
             this.btnActualizar.TabIndex = 3;
             this.btnActualizar.Text = "Actualizar Informacion";
             this.btnActualizar.UseVisualStyleBackColor = true;
@@ -95,19 +97,29 @@
             // 
             // btnConsultar
             // 
-            this.btnConsultar.Location = new System.Drawing.Point(199, 39);
+            this.btnConsultar.Location = new System.Drawing.Point(158, 39);
             this.btnConsultar.Name = "btnConsultar";
-            this.btnConsultar.Size = new System.Drawing.Size(165, 39);
+            this.btnConsultar.Size = new System.Drawing.Size(146, 39);
             this.btnConsultar.TabIndex = 2;
             this.btnConsultar.Text = "Consultar citas";
             this.btnConsultar.UseVisualStyleBackColor = true;
             this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(542, 39);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(146, 39);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Certificado";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // VerUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(801, 432);
+            this.ClientSize = new System.Drawing.Size(801, 463);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "VerUsuarios";
@@ -129,5 +141,6 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btnConsultar;
         private System.Windows.Forms.Button btnActualizar;
+        private System.Windows.Forms.Button button1;
     }
 }

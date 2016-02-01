@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CopraSalud.Modelo;
+using CopraSalud.Reportes;
 
 namespace CopraSalud.Vista
 {
@@ -19,6 +20,7 @@ namespace CopraSalud.Vista
         }
 
         List<ClCita> listaCitas = new List<ClCita>();
+        frmCitaHistorial historial;
         ClCita objCita = new ClCita();
         public int idUsuario;
         private void dgvCitas_Load(object sender, EventArgs e)
@@ -26,6 +28,13 @@ namespace CopraSalud.Vista
             string sql = "SELECT * FROM Cita WHERE usuario = " + idUsuario;
             listaCitas = objCita.historialUsuario(sql);
             dgtHistorial.DataSource = listaCitas;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            historial = new frmCitaHistorial();
+            historial.idUsuario = idUsuario;
+            historial.ShowDialog();
         }
     }
 }

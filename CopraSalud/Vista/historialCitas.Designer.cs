@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.dgvHistorial = new System.Windows.Forms.GroupBox();
+            this.button3 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.dgtHistorial = new System.Windows.Forms.DataGridView();
             this.lblUsuario = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.dgvHistorial.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgtHistorial)).BeginInit();
             this.SuspendLayout();
@@ -52,6 +52,16 @@
             this.dgvHistorial.TabIndex = 0;
             this.dgvHistorial.TabStop = false;
             this.dgvHistorial.Text = "Citas";
+            // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(675, 183);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(152, 36);
+            this.button3.TabIndex = 3;
+            this.button3.Text = "Cancelar Cita";
+            this.button3.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
@@ -87,6 +97,7 @@
             this.button1.TabIndex = 1;
             this.button1.Text = "Generar Reporte";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -97,16 +108,6 @@
             this.button2.TabIndex = 2;
             this.button2.Text = "Asistente";
             this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(675, 183);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(152, 36);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Cancelar Cita";
-            this.button3.UseVisualStyleBackColor = true;
             // 
             // historialCitas
             // 

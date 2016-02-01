@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.dgvUsuario = new System.Windows.Forms.DataGridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.mcFecha = new System.Windows.Forms.MonthCalendar();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.dgvUsuario = new System.Windows.Forms.DataGridView();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvUsuario)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvUsuario)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -50,6 +50,14 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Historial Usuario";
+            // 
+            // dgvUsuario
+            // 
+            this.dgvUsuario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvUsuario.Location = new System.Drawing.Point(18, 29);
+            this.dgvUsuario.Name = "dgvUsuario";
+            this.dgvUsuario.Size = new System.Drawing.Size(620, 150);
+            this.dgvUsuario.TabIndex = 0;
             // 
             // groupBox2
             // 
@@ -88,14 +96,7 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "Generar Informe";
             this.button1.UseVisualStyleBackColor = true;
-            // 
-            // dgvUsuario
-            // 
-            this.dgvUsuario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvUsuario.Location = new System.Drawing.Point(18, 29);
-            this.dgvUsuario.Name = "dgvUsuario";
-            this.dgvUsuario.Size = new System.Drawing.Size(620, 150);
-            this.dgvUsuario.TabIndex = 0;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // citasUsuario
             // 
@@ -109,9 +110,9 @@
             this.Text = "Citas Usuario";
             this.Load += new System.EventHandler(this.citasUsuario_Load);
             this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvUsuario)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvUsuario)).EndInit();
             this.ResumeLayout(false);
 
         }

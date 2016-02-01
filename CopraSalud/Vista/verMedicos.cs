@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using CopraSalud.Modelo;
 using CopraSalud.Vista;
-
+using CopraSalud.Reportes;
 namespace CopraSalud.Vista
 {
     public partial class verMedicos : Form
@@ -23,7 +23,7 @@ namespace CopraSalud.Vista
         List<ClMedico> listaMedico = new List<ClMedico>();
         historialMedico historialMedico = new historialMedico();
         actualizarMedico actualizarMedico = new actualizarMedico();
-
+        frmCMedico cerM;
         int idMedico;
         private void verMedicos_Load(object sender, EventArgs e)
         {
@@ -80,6 +80,13 @@ namespace CopraSalud.Vista
         {
             actualizarMedico.Medico = idMedico;
             actualizarMedico.Show();
+        }
+
+        private void btnCertificar_Click(object sender, EventArgs e)
+        {
+            cerM = new frmCMedico();
+            cerM.medico = idMedico;
+            cerM.ShowDialog();
         }
 
     }
