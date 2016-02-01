@@ -43,6 +43,7 @@
             this.cotizanteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registrarCotizanteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.verCotizanteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.skinEngine1 = new Sunisoft.IrisSkin.SkinEngine(((System.ComponentModel.Component)(this)));
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -157,6 +158,14 @@
             this.verCotizanteToolStripMenuItem.Text = "Ver Cotizante";
             this.verCotizanteToolStripMenuItem.Click += new System.EventHandler(this.verCotizanteToolStripMenuItem_Click);
             // 
+            // skinEngine1
+            // 
+            this.skinEngine1.SerialNumber = "U4N2UjLguUZs33UR+Vy47JAZ81t2fjIFvut28vc5oHiVeivGb/NZMA==";
+            this.skinEngine1.SkinFile = "C:\\Users\\EdisonJulian\\Documents\\Visual Studio 2013\\Projects\\CopraSalud\\CopraSalud" +
+    "\\Componentes Graficos Vb2\\SKIN NET 2010 WIN 7\\SkinVS.NET\\Diamond\\DiamondBlue.ssk" +
+    "";
+            this.skinEngine1.SkinStreamMain = ((System.IO.Stream)(resources.GetObject("skinEngine1.SkinStreamMain")));
+            // 
             // vistaAdministrador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -194,5 +203,6 @@
         private System.Windows.Forms.ToolStripMenuItem cotizanteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem registrarCotizanteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem verCotizanteToolStripMenuItem;
+        private Sunisoft.IrisSkin.SkinEngine skinEngine1;
     }
 }

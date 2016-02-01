@@ -29,3 +29,4 @@ C:\Users\EdisonJulian\documents\visual studio 2013\Projects\CopraSalud\CopraSalu
 C:\Users\EdisonJulian\documents\visual studio 2013\Projects\CopraSalud\CopraSalud\obj\Debug\RdlCompile.compiled
 C:\Users\EdisonJulian\documents\visual studio 2013\Projects\CopraSalud\CopraSalud\obj\Debug\CopraSalud.Reportes.frmCertificado.resources
 C:\Users\EdisonJulian\documents\visual studio 2013\Projects\CopraSalud\CopraSalud\obj\Debug\CopraSalud.Reportes.frmCMedico.resources
+C:\Users\EdisonJulian\documents\visual studio 2013\Projects\CopraSalud\CopraSalud\bin\Debug\IrisSkin2.dll
